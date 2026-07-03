@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="devo.php" method="post" autocomplete="on" >
+        <p>
+            <label for="iusu">usuario</label>
+            <input type="text" name="usu" id="iusu" required minlength="5" maxlength="15" size="20" placeholder="Digite seu usuario..." autocomplete="username">
+        </p>
+
+        <p>
+            <label for="isen">senha</label>
+            <input type="password" name="sen" id="isen" required minlength="5" maxlength="15" size="20" placeholder="Digite sua senha..." autocomplete="current-password">
+        </p>
+
+        <!-- o required serve para obrigar o preenchimento do campo -->
+
+        <!-- O minlength serve para colocar um mínimo de caracteres para o campo -->
+
+        <!-- O maxlength serve para colocar um máximo de caracteres para o campo -->
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>

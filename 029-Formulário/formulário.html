@@ -4,18 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulários</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        
+        }
+
+        
+
+        form{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.571);
+            border-radius: 10px;
+            height: 400px;
+            width: 300px;
+            text-align: center ;
+            padding-top: 100px;
+            background-color: rgb(188, 182, 182);
+            
+            
+        }
+    </style>
 </head>
 <body>
     
-    <h1>Meu primeiro formulário</h1>
-    <form autocomplete="off">
-        <p><label for="inome">Nome</label>: <input type="text" name="nome" id="inome"></p>
-
-       <!--o label serve para conectar o nome e o sobrenome com as suas respectivas caixas input atravé do "name" ou do "id" -->
-
-        <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
-
-        <input type="submit" value="Enviar">
-    </form>
+    
+        
+        <form action="devo.php" autocomplete="off" method="post">
+            <em>
+                <h1>Meu primeiro formulário</h1>
+            </em>
+            <br>
+            <p><label for="inome">Nome</label>: <input type="text" name="nome" id="inome"></p>
+            <br>
+           <!--o label serve para conectar o nome e o sobrenome com as suas respectivas caixas input atravé do "name" ou do "id" -->
+            <p><label for="isobrenome">Sobrenome</label>: <input type="text" name="sobrenome" id="isobrenome"></p>
+            <br>
+            <input style="height: 30px; width: 60px;" type="submit" value="Enviar">
+        </form>
+    
 </body>
 </html>
