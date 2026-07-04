@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+    <form action="processar.php" method="post">
+        <fieldset>
+            <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label> <br>
+            <input type="radio" name="sexo" id="ifem" value="F" checked><label for="ifem" >Feminino</label>
+        </fieldset>
+
+        <!--O checked serve para deixar uma opção já marcada, ele pode ser usado mais de uma vez no input ckeckbox, mas não no input radio que só pode ser usado uma vez.-->
+
+
+
+
+        <fieldset>
+            <legend>Esportes favoritos</legend>
+
+            <input type="checkbox" id="ibas" name="bas">
+            <label for="ibas">Basquete</label> <br>
+
+            <input type="checkbox" id="ifut" name="fut" checked>
+            <label for="ifut">Futebol</label> <br>
+
+            <input type="checkbox" id="ivol" name="vol">
+            <label for="ivol">Volei</label>
+            
+        </fieldset>
+
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+    
+</body>
+</html>
